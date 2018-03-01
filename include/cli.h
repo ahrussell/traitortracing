@@ -11,7 +11,7 @@
 
 using namespace std;
 
-// so map<string, string, cmp> will keep original ordering
+// ensures map<string, string, cmp> will keep original ordering
 struct cmp {
     bool operator()(const string& a, const string& b) const {
         return 1;

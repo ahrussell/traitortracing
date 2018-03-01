@@ -5,6 +5,10 @@ extern "C" {
 #include <relic/relic.h>
 }
 
+/*
+ * Functions adapted from RELIC
+ */
+
 void fp2_copy_const(fp2_t c, const fp2_t a) {
     fp_copy(c[0], a[0]);
     fp_copy(c[1], a[1]);
@@ -28,9 +32,6 @@ void fp12_copy_const(fp12_t c, const fp12_t a) {
     fp6_copy_const(c[1], a[1]);
 }
 
-/*
- * Functions below adapted from RELIC
- */
 std::string dig_to_str(dig_t a, int pad) {
     char buf[64];
 
@@ -163,20 +164,4 @@ std::string bn_to_str(const bn_t a) {
     }
 
     return std::string(buf) + "\n";
-}
-
-void fp2_read_str(fp2_t p, const char* str, int len, int radix) {
-    fp_read_str(p[0], str, len, radix);
-    fp_read_str(p[1], str, len, radix);
-}
-
-void fp6_read_str(fp6_t p, const char* str, int len, int radix) {
-    fp2_read_str(p[0], str, len, radix);
-    fp2_read_str(p[1], str, len, radix);
-    fp2_read_str(p[2], str, len, radix);
-}
-
-void fp12_read_str(fp12_t p, const char* str, int len, int radix) {
-    fp6_read_str(p[0], str, len, radix);
-    fp6_read_str(p[1], str, len, radix);
 }

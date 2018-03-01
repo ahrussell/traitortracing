@@ -24,7 +24,3 @@ std::string fp6_to_str(const fp6_t a);
 std::string fp12_to_str(const fp12_t a);
 std::string fp_to_str(const fp_t a);
 std::string bn_to_str(const bn_t a);
-
-void fp2_read_str(fp2_t p, const char* str, int len, int radix);
-void fp6_read_str(fp6_t p, const char* str, int len, int radix);
-void fp12_read_str(fp12_t p, const char* str, int len, int radix);

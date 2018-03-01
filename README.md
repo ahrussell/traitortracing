@@ -14,7 +14,7 @@ This project should be compiled with C++11 or greater. There is a Makefile that 
 
 ## Notes / Disclaimers
 
-This library is a proof of concept ONLY and should not be used in production. Several potential vulnerabilities:
+This library is an alpha proof of concept ONLY and should not be used in production. Several potential vulnerabilities:
 
 * [RELIC random point generation potentially biased](https://github.com/relic-toolkit/relic/issues/46)
 * Parameter and secret key generation leaks information via a timing attack.
