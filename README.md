@@ -10,7 +10,7 @@ First, you will need the following libraries:
 * [libsodium](https://download.libsodium.org/doc/)
 * [JSON for Modern C++](https://github.com/nlohmann/json)
 
-This library should be compiled with C++11 or greater. There is a Makefile that may need to be customized to your particular system.
+This project should be compiled with C++11 or greater. There is a Makefile that may need to be customized to your particular system.
 
 ## Notes / Disclaimers
 
